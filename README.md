@@ -1,12 +1,15 @@
-# React + Vite
+# Calculator
+A calculator built with React.js. It allows for the input of a mathematical expression and returns the result.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Multiply, divide, add and subtract operator buttons
+- Numbered buttons from 0-9 
+- C (Clear) and AC (All Clear) buttons
+- Parentheses buttons
+- An equals button to generate the answer 
 
-Currently, two official plugins are available:
+Intuitive coloring is used on the buttons for a more user-friendly interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+try it out!: (https://ji-calculator.netlify.app/)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
