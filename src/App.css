@@ -1,0 +1,69 @@
+body {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center; /*doesnt work without display: flex*/
+  /*background-color only takes one value*/
+  background: linear-gradient(to bottom right, rgb(84, 175, 245), rgb(80, 235, 124));
+  font-family: "Saira", sans-serif;
+  color:white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calculator{
+  background-color: rgb(69, 78, 78);
+  height: 32rem;
+  width: 20rem;
+  border-radius: 20px;
+  grid-template-columns: repeat(4, 60px);
+  padding: 15px;
+}
+.screen{
+  background-color: aqua;
+  width: 20rem;
+  height: 5rem;
+  grid-row: span 4;
+  border-radius: 10px;
+}
+.screen input {
+  background: none;
+  border: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: larger;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Saira", sans-serif;
+}
+/*The parent is .screen, whose 1st child is input, 2nd is hr and so on*/
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(5),
+button:nth-child(6){
+  background-color: black;
+  color: white;
+}
+
+button:nth-child(10),
+button:nth-child(14) {
+  background-color: rgb(22, 16, 190);
+  color: white;
+}
+button:nth-child(18){
+  background-color: rgb(255, 182, 45);
+}
+
+input {
+  padding-left: 10px;
+  font-family: "Saira", sans-serif;
+}
