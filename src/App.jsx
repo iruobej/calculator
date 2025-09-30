@@ -17,7 +17,7 @@ function App() {
         prev.length > 1 ? prev.slice(0, -1) : "0"
       );
     } else if(value === "=") {
-      setDisplay(evaluate(display.replace("x", "*")));
+      setDisplay(evaluate(display.replaceAll("x", "*")));
     } else if (display === "0"){
         return setDisplay(value)
     } else {
